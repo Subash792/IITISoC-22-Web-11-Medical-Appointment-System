@@ -1,0 +1,25 @@
+{
+  "name": "iitisoc-22-web-11-medical-appointment-system",
+  "version": "1.0.0",
+  "description": "MedHelp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subash792/IITISoC-22-Web-11-Medical-Appointment-System.git"
+  },
+  "author": "Subash Ganti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Subash792/IITISoC-22-Web-11-Medical-Appointment-System/issues"
+  },
+  "homepage": "https://github.com/Subash792/IITISoC-22-Web-11-Medical-Appointment-System#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.19"
+  }
+}
