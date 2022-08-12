@@ -33,6 +33,9 @@ const doctor = mongoose.model("doctors",doctor_schema);
 app.post("/",function(req,res){
     res.sendFile(__dirname+"/booking.html");
     console.log(req.body);
+    const q = doctor.find(req.body);
+    console.log(q);
+
 });
 
 app.post("/signup",function(req,res){
