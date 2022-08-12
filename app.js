@@ -23,7 +23,10 @@ const doctor_schema = new mongoose.Schema({
     address: String,
     city: String,
     state: String,
-})
+});
+
+const doctor = mongoose.model("doctors",doctor_schema);
+
 
 
 // post requests
@@ -33,8 +36,11 @@ app.post("/",function(req,res){
 });
 
 app.post("/signup",function(req,res){
+    const d = new doctor(req.body);
+    d.save();
     res.send("Successfully signed up.")
     console.log(req.body);
+
 });
 
 app.post("/login",function(req,res){
